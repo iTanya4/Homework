@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GB\\CSem\\Homework3\\Homework3.csproj": {}
+    "C:\\GB\\CSem\\sem3\\sem3.csproj": {}
   },
   "projects": {
-    "C:\\GB\\CSem\\Homework3\\Homework3.csproj": {
+    "C:\\GB\\CSem\\sem3\\sem3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GB\\CSem\\Homework3\\Homework3.csproj",
-        "projectName": "Homework3",
-        "projectPath": "C:\\GB\\CSem\\Homework3\\Homework3.csproj",
+        "projectUniqueName": "C:\\GB\\CSem\\sem3\\sem3.csproj",
+        "projectName": "sem3",
+        "projectPath": "C:\\GB\\CSem\\sem3\\sem3.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\GB\\CSem\\Homework3\\obj\\",
+        "outputPath": "C:\\GB\\CSem\\sem3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
