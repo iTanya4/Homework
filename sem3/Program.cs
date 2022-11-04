@@ -40,7 +40,6 @@
 //     Console.WriteLine("Введены некорректные данные");
 // }
 // Напишите программу, которая по заданному номеру четверти, показывает диапазон возможных координат точек в этой четверти (x и y).
-/
 // catch
 // {
 //     Console.WriteLine("Вы ввели число некорhетный данные"); 
@@ -56,10 +55,7 @@
 // A (3,6); B (2,1) -> 5,09 
 // A (7,-5); B (1,-1) -> 7,21
 
-Console.WriteLine("Введите координату x1");
- int x1 = Convert.ToInt32(Console.ReadLine());
- Console.WriteLine("Введите 
-От Елена всем 09:50 PM
+
 Console.WriteLine("Введите координаты x точки a");
 int ax = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите координаты y точки a");

@@ -1,0 +1,15 @@
+C:\GB\CSem\lec23\bin\Debug\net6.0\lec23.exe
+C:\GB\CSem\lec23\bin\Debug\net6.0\lec23.deps.json
+C:\GB\CSem\lec23\bin\Debug\net6.0\lec23.runtimeconfig.json
+C:\GB\CSem\lec23\bin\Debug\net6.0\lec23.dll
+C:\GB\CSem\lec23\bin\Debug\net6.0\lec23.pdb
+C:\GB\CSem\lec23\obj\Debug\net6.0\lec23.csproj.AssemblyReference.cache
+C:\GB\CSem\lec23\obj\Debug\net6.0\lec23.GeneratedMSBuildEditorConfig.editorconfig
+C:\GB\CSem\lec23\obj\Debug\net6.0\lec23.AssemblyInfoInputs.cache
+C:\GB\CSem\lec23\obj\Debug\net6.0\lec23.AssemblyInfo.cs
+C:\GB\CSem\lec23\obj\Debug\net6.0\lec23.csproj.CoreCompileInputs.cache
+C:\GB\CSem\lec23\obj\Debug\net6.0\lec23.dll
+C:\GB\CSem\lec23\obj\Debug\net6.0\refint\lec23.dll
+C:\GB\CSem\lec23\obj\Debug\net6.0\lec23.pdb
+C:\GB\CSem\lec23\obj\Debug\net6.0\lec23.genruntimeconfig.cache
+C:\GB\CSem\lec23\obj\Debug\net6.0\ref\lec23.dll

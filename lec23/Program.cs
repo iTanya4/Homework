@@ -199,12 +199,12 @@
 // //  for (int i=0; i<13;i++)
 // //    { if (array[i]>40 && array[i]<100)
 //     int count = 0;
-//     // bool =false;
+   
 // for (int i=0; i<13;i++)
 //     {
 //         if (array[i]>39 && array[i]<100)
 //         {
-//         //   =true;
+      
 //             count++;
 //         }
 //     }
@@ -218,26 +218,72 @@
  // Задача 37: Найдите произведение пар чисел в одномерном массиве. Парой считаем первый и последний элемент, второй и предпоследний и т.д. Результат запишите в новом массиве.
 // [1 2 3 4 5] -> 5 8 3
 // [6 7 3 6] -> 36 21
-int [] array = new int [11];
-void FillArray(int[] collection)
-{
-   int  lenght = collection.Length;
-    int index = 0;
-    while (index<lenght)
-{
-    collection[index] = new Random().Next(0,10);
-    index++;
-}
- }
+// int [] array = new int [11];
+// void FillArray(int[] collection)
+// {
+//    int  lenght = collection.Length;
+//     int index = 0;
+//     while (index<lenght)
+// {
+//     collection[index] = new Random().Next(0,10);
+//     index++;
+// }
+//  }
  void PrintArray (int[]array)
 { 
-    int count = array.Lenght;
+    int count = array.Length;
     for (int i=0; i<count;i++)
     {Console.Write($"{array[i] }  ");
        }
+Console.WriteLine("  ");
 }
-FillArray (array);
-PrintArray (array);
-int prod = 1;
-for (int i=0;i<12; i++);
-{}
+// FillArray (array);
+// PrintArray (array);
+// int prod = 1;
+// for (int i=0;i<12; i++);
+// {}
+
+//          поиск максимального и минимального элемента
+// void FindMax(int[] arr)
+// {
+//     int max=arr[0];
+//     foreach (int el in arr)
+//     {
+//         if (el>max) max=el;
+//             }
+//     Console.WriteLine("    ");
+//     Console.WriteLine($"Максимальный элемент массива {max}");
+  
+// }
+
+// void FindMin(int[] arr)
+// {
+//     int min=arr[0];
+//     foreach (int el in arr)
+//     {
+//         if (el<min) min=el;
+//             }
+//     Console.WriteLine("    ");
+//     Console.WriteLine($"Минимальный элемент массива {min}");
+// }
+
+int [] arr = {1, 5, 4, 3, 2, 6, 7, 1, 1};
+
+void SelectionSort (int []array)
+{
+    for (int i=0; i < array.Length-1; i++)
+    {
+        int minPosition = i;
+        for (int j = i+1; j<array.Length; j++)
+            {if(array[j]< array[minPosition]) minPosition = j;
+            }
+        int temp = array[i];
+        array[i]= array[minPosition];
+        array [minPosition] = temp;
+    }
+}
+
+PrintArray(arr);
+SelectionSort (arr);
+
+PrintArray(arr);
