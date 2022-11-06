@@ -104,55 +104,63 @@
 // клавиатуры). Вывести на экран красивенько таблицей. Найти минимальное число и его индекс, найти максимальное число и 
 // его индекс. Вывести эту информацию на экран.
 
-// Console.WriteLine("Введите кол-во строк");
-// int m = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Введите кол-во столбцов");
-// int n = Convert.ToInt32(Console.ReadLine());
-// int [,] mass = new int [m,n];
+Console.WriteLine("Введите кол-во строк");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите кол-во столбцов");
+int n = Convert.ToInt32(Console.ReadLine());
+int [,] mass = new int [m,n];
 
-// void FillArray(int [,]matr)
-// {
-//     for (int i=0; i<matr.GetLength(0); i++)
-//             {
-//                 for (int j=0; j<matr.GetLength(1); j++)
-//                 {
-//                     matr[i,j] = new Random().Next(1,10);
-//                 }
-//             }
-// }
-// void PrintMas (int [,] matrix)
-//     {
-//         for (int i=0; i<matrix.GetLength(0); i++)
-//             {
-//                 for (int j=0; j<matrix.GetLength(1); j++)
-//             {
-//                 Console.Write($"{matrix[i,j]}  ");
-//             }
-//     Console.WriteLine();
-//         }
-//     }
-// FillArray(mass);
-// PrintMas(mass);
-// int max = mass[0,0]; 
-// for (int i=0; i<mass.GetLength(0); i++)
-//             {
-//                 for (int j=0; j<mass.GetLength(1); j++)
-//             {
-//                   if (mass[i,j]>max) max = mass[i,j];
-//       }
-//                 Console.WriteLine("    ");
-// Console.WriteLine($"максимальное значение элемента = {max}");
-// break;
-//         }
+void FillArray(int [,]matr)
+{
+    for (int i=0; i<matr.GetLength(0); i++)
+            {
+                for (int j=0; j<matr.GetLength(1); j++)
+                {
+                    matr[i,j] = new Random().Next(1,10);
+                }
+            }
+}
+void PrintMas (int [,] matrix)
+    {
+        for (int i=0; i<matrix.GetLength(0); i++)
+            {
+                for (int j=0; j<matrix.GetLength(1); j++)
+            {
+                Console.Write($"{matrix[i,j]}  ");
+            }
+    Console.WriteLine();
+        }
+    }
+FillArray(mass);
+PrintMas(mass);
+int index1 = 0;
+int index2 = 0;
+int max = mass[0,0]; 
+for (int i=0; i<mass.GetLength(0); i++)
+            {
+                for (int j=0; j<mass.GetLength(1); j++)
+            {
+                  if (mass[i,j]>max) {max = mass[i,j];
+                                        index1 = i;
+                                        index2 = j;
+                                     }
+            }
+                Console.WriteLine("    ");
+Console.WriteLine($"максимальное значение элемента = {max}, его индекс [{index1},{index2}]");
+break;
+        }
 
-// int min = mass[0,0]; 
-// for (int i=0; i<mass.GetLength(0); i++)
-//             {
-//                 for (int j=0; j<mass.GetLength(1); j++)
-//             {
-//                   if (mass[i,j]<min) min = mass[i,j];
-//       }
-//                 Console.WriteLine("    ");
-// Console.WriteLine($"минимальное значение элемента = {min}");
-// break;
+int min = mass[0,0]; 
+for (int i=0; i<mass.GetLength(0); i++)
+        {
+                for (int j=0; j<mass.GetLength(1); j++)
+            {
+                  if (mass[i,j]<min) {min = mass[i,j];
+                                        index1 = i;
+                                        index2 = j;
+                                     }
+             }
+                Console.WriteLine("    ");
+Console.WriteLine($"минимальное значение элемента = {min}, его индекс [{index1},{index2}]");
+break;
         }
